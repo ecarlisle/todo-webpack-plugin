@@ -47,7 +47,8 @@ function reporter(options, files) {
         fileName:         file,
         customTags:       options.tags,
         reporter:         options.reporter,
-        withInlineFiles:  options.withInlineFiles
+        withInlineFiles:  options.withInlineFiles,
+        associateExtWithParser: options.associateExtWithParser,
       });
       todos = todos.concat(todo);
     });
